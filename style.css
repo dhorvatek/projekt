@@ -1,0 +1,358 @@
+.nav-link.btn.btn-light.text-primary.mx-2 {
+    background-color: white;
+    color: #0d6efd;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #0d6efd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link.btn.btn-light.text-primary.mx-2:hover {
+    background-color: #0d6efd;
+    color: white !important;
+    border-color: #0d6efd;
+}
+
+
+
+.weather-info {
+    max-width: 1000px; 
+    margin: 50px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+.weather-icon {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    animation: bounce 1.5s infinite; 
+}
+
+/* Weather Description Styling */
+.weather-description {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 15px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Temperature Styling */
+.weather-temp {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #0d6efd;
+    transition: transform 0.3s ease;
+}
+
+.weather-temp:hover {
+    transform: scale(1.1);
+}
+
+/* Next 7 Days Forecast Cards */
+.card {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0d6efd; 
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* City Input Form Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+}
+
+.input-group button {
+    border-radius: 50px;
+    padding: 10px 20px;
+    background-color: #0d6efd; 
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+    background-color: #0056b3;
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+/* Weather Icon */
+.weather-icon {
+    width: 70px; 
+    height: 70px;
+    margin-bottom: 15px; 
+    transition: transform 0.3s ease; 
+}
+
+
+.card-body h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0d6efd; 
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Hover effect for cards */
+.card:hover .weather-icon {
+    animation: bounce 1s ease-out forwards; 
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .weather-info {
+        padding: 30px 20px;
+    }
+
+    .weather-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .weather-temp {
+        font-size: 1.8rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* section for weather animations (index.php) */
+.fun-weather-section {
+    margin-top: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Card Styling */
+.fun-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+.fun-card h4 {
+    font-size: 1.5rem;
+    color: #0d6efd;
+}
+
+.fun-text {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Animations for Weather Effects */
+.sun-animation {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-top: 20px;
+    animation: sunMovement 4s infinite alternate;
+}
+
+.rain-animation {
+    width: 15px;
+    height: 30px;
+    background-color: #4f94d4;
+    border-radius: 5px;
+    margin-top: 20px;
+    animation: rainMovement 1.5s infinite linear;
+}
+
+.storm-animation {
+    width: 30px;
+    height: 30px;
+    background-color: #4f4f4f;
+    border-radius: 50%;
+    margin-top: 20px;
+    animation: thunderMovement 2s infinite alternate;
+}
+
+/* Stickers */
+.weather-stickers {
+    margin-top: 30px;
+}
+
+.weather-sticker {
+    font-size: 3rem;
+    margin: 0 10px;
+    display: inline-block;
+    animation: spinSticker 4s infinite ease-in-out;
+}
+
+/* Background Animation */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.cloud {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: cloudMovement 20s linear infinite;
+}
+
+.cloud-1 {
+    width: 200px;
+    height: 120px;
+    top: 10%;
+    left: 50%;
+}
+
+.cloud-2 {
+    width: 150px;
+    height: 90px;
+    top: 30%;
+    left: 30%;
+}
+
+/* Animations weather */
+@keyframes sunMovement {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 0 30px rgba(255, 255, 0, 0.8);
+    }
+    100% {
+        transform: translateY(-20px);
+        box-shadow: 0 0 60px rgba(255, 255, 0, 0.8);
+    }
+}
+
+@keyframes rainMovement {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+}
+
+@keyframes thunderMovement {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0.6;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes cloudMovement {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes spinSticker {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
